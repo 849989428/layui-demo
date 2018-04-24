@@ -27,6 +27,21 @@
     border-bottom: 1px solid #ccc;
     /*overflow: hidden;*/
     overflow-x: auto;
+
+    scrollbar-darkshadow-color: rgba(0, 0, 0, .5);
+    scrollbar-base-color: rgba(0, 0, 0, .3);
+}
+
+#win-iframe-tab-title::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#win-iframe-tab-title::-webkit-scrollbar-thumb {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #win-iframe-tab-title > span {
