@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LayUI Tab</title>
+    <link rel="stylesheet" href="../../iframe/layui/css/layui.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/styles/admin.css">
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header layui-bg-gray liguo-header">
+            <div class="layui-logo">
+                <h3>餐易点 <small>让管理更轻松</small></h3>
+            </div>
+            <ul class="layui-nav layui-layout-left">
+                <li class="layui-nav-item tab-page-reload" lay-unselect>
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-refresh-3"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item" lay-unselect>
+                    <a href="javascript:;" target="_blank">汇款平台</a>
+                </li>
+                <li class="layui-nav-item" lay-unselect>
+                    <a href="javascript:;">共享会员</a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right" lay-filter="liguo-header-nav-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-user"></i> 小易
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;" data-href="pages/users/info.html">基本资料</a></dd>
+                        <dd><a href="javascript:;" data-href="pages/users/change_password.html">修改密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        退出
+                        <i class="fa fa-sign-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree layui-bg-black" id="layui-aside" lay-filter="liguo-aside"></ul>
+            </div>
+        </div>
+        <div class="layui-body">
+            <div class="layui-demo-tab layui-tab" lay-filter="test" lay-allowClose="true">
+                <ul class="layui-tab-title" id="win-iframe-tab-title"></ul>
+                <div class="layui-tab-content" id="win-iframe-tab-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../../iframe/layui/layui.js"></script>
+    <script>
+        layui.config({
+            base: './static/js/',
+            version: true
+        }).use([
+            'menu',
+            'listenElement',
+            'pageIframe'
+        ], function () {
+            var menu = layui.menu
+                ,listenElement = layui.listenElement
+                ,pages = layui.pageIframe;
+
+            var aside = '#layui-aside';
+            menu.init(aside);
+            listenElement.init(aside);
+            pages.init();
+        })
+    </script>
+</body>
+</html>

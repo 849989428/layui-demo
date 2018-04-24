@@ -1,0 +1,48 @@
+{
+  "prompt":"暂仅支持 2 级菜单",
+  "menus": [
+    {
+      "href": "pages/data-count.html",
+      "icon": "fa fa-home",
+      "action": true,
+      "title": "主页",
+      "name": "home"
+    },{
+      "href": "pages/stores.html",
+      "icon": "fa fa-th-list",
+      "title": "店铺列表"
+    },{
+      "href": "pages/apply.html",
+      "icon": "fa fa-paper-plane-o",
+      "title": "入驻申请"
+    },{
+      "href": "pages/binding.html",
+      "icon": "fa fa-link",
+      "title": "业务员绑定"
+    },{
+      "href": "pages/level.html",
+      "icon": "fa fa-file-word-o",
+      "title": "我的代理"
+    },{
+      "href": "pages/message.html",
+      "icon": "fa fa-envelope-o",
+      "title": "站内信"
+    },{
+      "href": "pages/promote.html",
+      "icon": "fa fa-share-alt",
+      "title": "推广通"
+    },{
+      "href": "pages/comment.html",
+      "icon": "fa fa-comment-o",
+      "title": "评价审核"
+    },{
+      "href": "pages/",
+      "icon": "fa fa-user-plus",
+      "title": "共享会员推广"
+    },{
+      "href": "pages/version.html",
+      "icon": "fa fa-file-code-o",
+      "title": "BD更新记录"
+    }
+  ]
+}
