@@ -1,10 +1,11 @@
-layui.define(['jquery', 'element'], function (exports) {
+layui.define(['jquery', 'element', 'layer'], function (exports) {
     var $ = layui.jquery
-        ,element = layui.element;
+        ,element = layui.element
+        ,layer = layui.layer;
 
     var funs = {
         init: function (asideClass, menuJson) {
-            console.log(menuJson)
+            layer.load();
             $.get(menuJson, function (res) {
                 var dom = '';
 
@@ -15,6 +16,8 @@ layui.define(['jquery', 'element'], function (exports) {
                 $(asideClass).html(dom);
                 element.init();
                 $(asideClass).children().first().children('a').click();
+
+                layer.closeAll('loading');
             });
         },
 
