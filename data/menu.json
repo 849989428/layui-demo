@@ -39,10 +39,6 @@
       "href": "pages/",
       "icon": "fa fa-user-plus",
       "title": "共享会员推广"
-    },{
-      "href": "pages/version.html",
-      "icon": "fa fa-file-code-o",
-      "title": "BD更新记录"
     }
   ]
 }

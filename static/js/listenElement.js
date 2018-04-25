@@ -37,7 +37,6 @@ layui.define(['element', 'layer'], function (exports) {
         elementNavbar: function (elm, type) {
             var oid = elm.data('href')
                 ,isYes = false;
-            console.log(oid)
             if (!oid) {
                 return false;
             }
@@ -52,9 +51,11 @@ layui.define(['element', 'layer'], function (exports) {
 
                 // ****************************
                 // 计算 iframe自适应宽高
-                var layuiBodyPadding = 20;
-                iWidth = $('.layui-body').width() - layuiBodyPadding;
-                iHeight = $('.layui-body').height() - $('#win-iframe-tab-title').height() - layuiBodyPadding;
+                var layuiBodyPadding = 0;
+                // iWidth = $('.layui-body').width() - layuiBodyPadding;
+                iWidth = '100%';
+                // iHeight = $('.layui-body').height() - $('#win-iframe-tab-title').height() - layuiBodyPadding;
+                iHeight = '100%';
                 // ****************************
 
                 var iframeId = 'iframe_' + new Date().getTime();

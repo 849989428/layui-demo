@@ -1,0 +1,39 @@
+{
+  "prompt":"暂仅支持 2 级菜单",
+  "menus": [
+    {
+      "href": "pages/data-count.html",
+      "icon": "fa fa-area-chart",
+      "action": true,
+      "title": "店铺统计"
+    },{
+      "href": "pages/stores.html",
+      "icon": "fa fa-file-archive-o",
+      "title": "财务订单"
+    },{
+      "href": "pages/apply.html",
+      "icon": "fa fa-bicycle",
+      "title": "外卖管家"
+    },{
+      "href": "pages/binding.html",
+      "icon": "fa fa-bitbucket",
+      "title": "菜品管理"
+    },{
+      "href": "pages/level.html",
+      "icon": "fa fa-gavel",
+      "title": "桌台管理"
+    },{
+      "href": "pages/message.html",
+      "icon": "fa fa-print",
+      "title": "打印设备"
+    },{
+      "href": "pages/comment.html",
+      "icon": "fa fa-gift",
+      "title": "店铺活动"
+    },{
+      "href": "pages/promote.html",
+      "icon": "fa fa-cog",
+      "title": "设置"
+    }
+  ]
+}

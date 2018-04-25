@@ -30,6 +30,11 @@
                 </li>
             </ul>
             <ul class="layui-nav layui-layout-right" lay-filter="liguo-header-nav-right">
+                <li class="layui-nav-item">
+                    <a href="./index.html">
+                        退出店铺
+                    </a>
+                </li>
                 <li class="layui-nav-item" lay-unselect>
                     <a href="javascript:;" data-href="pages/version.html">
                         <i class="fa fa-file-text"></i> 更新记录
@@ -79,7 +84,7 @@
                 ,pages = layui.pageIframe;
 
             var aside = '#layui-aside';
-            menu.init(aside, './data/menu.json?'+new Date().getTime());
+            menu.init(aside, './data/business.json?'+new Date().getTime());
             listenElement.init(aside);
             pages.init();
         })

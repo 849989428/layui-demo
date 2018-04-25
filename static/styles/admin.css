@@ -1,8 +1,18 @@
 .layui-body > .layui-tab {
     margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.layui-layout-admin .liguo-side {
+    top: 50px;
 }
 
 .layui-layout-admin .layui-body {
+    top: 50px;
     bottom: 0px;
 }
 
@@ -17,11 +27,11 @@
 }
 
 #win-iframe-tab-title {
-    position: fixed;
-    top: 60px;
-    left: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     right: 0px;
-    height: 45px;
+    height: 40px;
     padding: 0px 20px;
     background-color: white;
     border-bottom: 1px solid #ccc;
@@ -52,7 +62,7 @@
 }
 
 #win-iframe-tab-title li {
-    height: 45px;
+    height: 40px;
     border-right: 1px solid #f6f6f6;
     position: relative;
 }
@@ -94,24 +104,35 @@
 }
 
 #win-iframe-tab-title .layui-this:after {
-    top: 43px;
+    top: 38px;
     border-color: #ff7400;
     width: 100%;
 }
 
 #win-iframe-tab-content {
-    margin-top: 46px;
-    padding: 0px;
+    position: absolute;
+    top: 41px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#win-iframe-tab-content > .layui-tab-item,
+#win-iframe-tab-content iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 #win-iframe-tab-content iframe {
-    padding: 10px;
     border: 0px;
-    background-color: #f4f4f4;
 }
 
 .liguo-header {
     background-color: white !important;
+    height: 50px;
 }
 
 .liguo-header::after {
@@ -127,6 +148,7 @@
 .liguo-header .layui-logo {
     text-align: left;
     width: 170px;
+    line-height: 48px;
     padding: 0px 15px;
     color: #ff7400;
     background-color: #20222A;
@@ -142,6 +164,10 @@
     top: 0px !important;
 }
 
+.liguo-header .layui-nav-item {
+    line-height: 50px;
+}
+
 .liguo-header .layui-nav-item a:hover,
 .liguo-header .layui-nav-item a {
     color: #333;
@@ -151,10 +177,29 @@
     display: none;
 }
 
+.liguo-header .layui-nav-child {
+    top: 55px;
+}
+
 .liguo-header .layui-nav .layui-nav-more {
     border-color: #333 transparent transparent;
 }
 
 .liguo-header .layui-nav .layui-nav-mored {
     border-color: transparent transparent #333;
+}
+
+
+
+/*layer*/
+.layer-top-100 {
+    top: 100px!important;
+}
+
+.liguo-layer-share-member {
+    width: 460px;
+}
+
+.liguo-layer-share-member .layui-layer-content {
+    padding: 12px;
 }

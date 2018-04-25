@@ -3,8 +3,9 @@ layui.define(['jquery', 'element'], function (exports) {
         ,element = layui.element;
 
     var funs = {
-        init: function (asideClass) {
-            $.get('./data/menu.json', function (res) {
+        init: function (asideClass, menuJson) {
+            console.log(menuJson)
+            $.get(menuJson, function (res) {
                 var dom = '';
 
                 $.each(res.menus, function (index, item) {
