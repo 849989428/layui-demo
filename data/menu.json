@@ -16,11 +16,11 @@
       "icon": "fa fa-paper-plane-o",
       "title": "入驻申请"
     },{
-      "href": "pages/binding.html",
+      "href": "pages/salesman.html",
       "icon": "fa fa-link",
       "title": "业务员绑定"
     },{
-      "href": "pages/level.html",
+      "href": "pages/agent.html",
       "icon": "fa fa-file-word-o",
       "title": "我的代理"
     },{
@@ -28,7 +28,7 @@
       "icon": "fa fa-envelope-o",
       "title": "站内信"
     },{
-      "href": "pages/promote.html",
+      "href": "pages/extension.html",
       "icon": "fa fa-share-alt",
       "title": "推广通"
     },{
@@ -36,7 +36,7 @@
       "icon": "fa fa-comment-o",
       "title": "评价审核"
     },{
-      "href": "pages/",
+      "href": "pages/share-member-promotion.html",
       "icon": "fa fa-user-plus",
       "title": "共享会员推广"
     }

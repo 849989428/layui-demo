@@ -9,11 +9,11 @@ layui.define(['element', 'layer'], function (exports) {
 
             var layId = location.hash.replace('/^#/', '');
 
-            element.on('nav(liguo-aside)', function (elm) {
+            element.on('nav(temp-aside)', function (elm) {
                 funs.elementNavbar(elm, 1);
             });
 
-            element.on('nav(liguo-header-nav-right)', function (elm) {
+            element.on('nav(temp-header-nav-right)', function (elm) {
                 funs.elementNavbar(elm);
             });
 

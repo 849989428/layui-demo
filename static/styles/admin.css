@@ -7,7 +7,7 @@
     bottom: 0px;
 }
 
-.layui-layout-admin .liguo-side {
+.layui-layout-admin .temp-side {
     top: 50px;
 }
 
@@ -130,12 +130,12 @@
     border: 0px;
 }
 
-.liguo-header {
+.temp-header {
     background-color: white !important;
     height: 50px;
 }
 
-.liguo-header::after {
+.temp-header::after {
     position: absolute;
     content: ' ';
     bottom: 0px;
@@ -145,7 +145,7 @@
     width: 100%;
 }
 
-.liguo-header .layui-logo {
+.temp-header .layui-logo {
     text-align: left;
     width: 170px;
     line-height: 48px;
@@ -154,38 +154,38 @@
     background-color: #20222A;
 }
 
-.liguo-header .layui-logo h3 small {
+.temp-header .layui-logo h3 small {
     font-size: 12px;
     color: #aaa;
 }
 
-.liguo-header .layui-nav .layui-nav-bar {
+.temp-header .layui-nav .layui-nav-bar {
     /*height: 2px;*/
     top: 0px !important;
 }
 
-.liguo-header .layui-nav-item {
+.temp-header .layui-nav-item {
     line-height: 50px;
 }
 
-.liguo-header .layui-nav-item a:hover,
-.liguo-header .layui-nav-item a {
+.temp-header .layui-nav-item a:hover,
+.temp-header .layui-nav-item a {
     color: #333;
 }
 
-.liguo-header .layui-this::after {
+.temp-header .layui-this::after {
     display: none;
 }
 
-.liguo-header .layui-nav-child {
+.temp-header .layui-nav-child {
     top: 55px;
 }
 
-.liguo-header .layui-nav .layui-nav-more {
+.temp-header .layui-nav .layui-nav-more {
     border-color: #333 transparent transparent;
 }
 
-.liguo-header .layui-nav .layui-nav-mored {
+.temp-header .layui-nav .layui-nav-mored {
     border-color: transparent transparent #333;
 }
 
@@ -194,12 +194,4 @@
 /*layer*/
 .layer-top-100 {
     top: 100px!important;
-}
-
-.liguo-layer-share-member {
-    width: 460px;
-}
-
-.liguo-layer-share-member .layui-layer-content {
-    padding: 12px;
 }

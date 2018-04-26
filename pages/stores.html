@@ -12,26 +12,26 @@
         <link rel="stylesheet" href="../static/styles/pages.css">
     </head>
     <body>
-        <div class="liguo-wrapper">
-            <div class="liguo-pages-operation"></div>
-            <div class="liguo-pages-body">
-                <div class="liguo-pages-content">
+        <div class="temp-wrapper">
+            <div class="temp-pages-operation"></div>
+            <div class="temp-pages-body">
+                <div class="temp-pages-content">
                     <fieldset class="layui-elem-field">
                         <legend><span style="font-size: 80%;">已入驻商家数: </span>1</legend>
                         <div class="layui-field-box">
                             <p>不建议将未入驻的商家也一起循环到这里，</p>
-                            <div class="layui-field-opera" style="margin-top: 12px;">
-                                <div class="search-store layui-inline">
-                                    <div class="layui-inline">
-                                        <input type="text" name="store_name" required lay-verify="required" placeholder="查找店铺" autocomplete="off" class="layui-input">
-                                    </div>
-                                    <button class="layui-btn"><i class="fa fa-search"></i></button>
-                                </div>
-                                <a href="#" class="layui-btn layui-btn-normal">查看未入驻商家</a>
-                            </div>
                         </div>
                     </fieldset>
-                    <table class="layui-table liguo-stores-table" lay-size="sm">
+                    <div class="temp-opera">
+                        <div class="search-store layui-inline">
+                            <div class="layui-inline">
+                                <input type="text" name="store_name" required lay-verify="required" placeholder="查找店铺" autocomplete="off" class="layui-input">
+                            </div>
+                            <button class="layui-btn"><i class="fa fa-search"></i></button>
+                        </div>
+                        <a href="#" class="layui-btn layui-btn-normal">查看未入驻商家</a>
+                    </div>
+                    <table class="layui-table temp-stores-table" lay-size="sm">
                         <colgroup>
                             <col width="60">
                             <col>
@@ -54,14 +54,14 @@
                                 <td>名人指点</td>
                                 <td>2018-04-24 13:23:12</td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="1" data-type="adminQrcode">
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="1" data-type="adminQrcode">
                                         <i class="fa fa-qrcode"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="1" data-type="dataStatistics">查看店铺</a>
-                                    <a href="../store.html" target="_parent" class="liguo-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="1" data-type="cancellation">注销</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="1" data-type="dataStatistics">查看店铺</a>
+                                    <a href="../store.html?store_id=1" target="_parent" class="temp-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="1" data-type="cancellation">注销</a>
                                 </td>
                             </tr>
                             <tr>
@@ -69,14 +69,14 @@
                                 <td>名人指点2</td>
                                 <td>2018-04-24 13:23:12</td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="2" data-type="adminQrcode">
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="2" data-type="adminQrcode">
                                         <i class="fa fa-qrcode"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="2" data-type="dataStatistics">查看店铺</a>
-                                    <a href="../store.html" target="_parent" class="liguo-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="2" data-type="cancellation">注销</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="2" data-type="dataStatistics">查看店铺</a>
+                                    <a href="../store.html?store_id=2" target="_parent" class="temp-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="2" data-type="cancellation">注销</a>
                                 </td>
                             </tr>
                             <tr>
@@ -84,19 +84,19 @@
                                 <td>名人指点3</td>
                                 <td>2018-04-24 13:23:12</td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="3" data-type="adminQrcode">
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm seeStoreQrcode" data-storeId="3" data-type="adminQrcode">
                                         <i class="fa fa-qrcode"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="3" data-type="dataStatistics">查看店铺</a>
-                                    <a href="../store.html" target="_parent" class="liguo-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
-                                    <a href="javascript:;" class="liguo-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="3" data-type="cancellation">注销</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-primary layui-btn-sm storeInfo" data-storeId="3" data-type="dataStatistics">查看店铺</a>
+                                    <a href="../store.html?store_id=3" target="_parent" class="temp-stores-table-btn layui-btn layui-btn-sm goStore">进入</a>
+                                    <a href="javascript:;" class="temp-stores-table-btn layui-btn layui-btn-danger layui-btn-sm delStore" data-storeId="3" data-type="cancellation">注销</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="liguo-pagination" id="pagination"></div>
+                    <div class="temp-pagination" id="pagination"></div>
                 </div>
             </div>
         </div>

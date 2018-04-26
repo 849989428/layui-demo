@@ -6,8 +6,142 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/styles/pages.css?2">
 </head>
 <body>
-<h2>基于layui框架的BD后台管理系统 - 4</h2>
+	<div class="temp-wrapper">
+		<div class="layui-tab layui-tab-brief" style="margin-top: 0px;">
+			<ul class="layui-tab-title">
+				<li class="layui-this">申请列表</li>
+				<li>客服</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+					<div class="temp-opera">
+						<blockquote class="layui-elem-quote">
+							<p><strong>Tips:</strong> 点击店铺名称可查看相应简介</p>
+							<p><strong>Tips:</strong> 点击城市定位图标可获得详细地址</p>
+						</blockquote>
+						<div class="layui-inline contact-search">
+							<div class="layui-inline">
+								<input type="text" name="contact" placeholder="搜索联系人" required lay-verify="required" class="layui-input">
+							</div>
+							<button class="layui-btn"><i class="fa fa-search"></i></button>
+						</div>
+						<div class="layui-inline staff-search layui-form">
+							<select name="staff">
+								<option value="0">员工规模检索</option>
+								<option value="1">0 ~ 5人</option>
+								<option value="2">6 ~ 10人</option>
+								<option value="3">11 ~ 30人</option>
+								<option value="4">30人以上</option>
+							</select>
+						</div>
+						<button class="layui-btn">
+							<i class="fa fa-plus"></i>
+							新增店铺
+						</button>
+					</div>
+					<div class="temp-content">
+						<table class="layui-table">
+							<colgroup>
+								<col width="60">
+								<col width="90">
+								<col width="120">
+								<col>
+								<col width="90">
+								<col width="80">
+								<col width="180">
+								<col width="130">
+								<col width="140">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>编号</th>
+									<th>联系人</th>
+									<th>联系方式</th>
+									<th>店铺</th>
+									<th>员工规模</th>
+									<th>城市</th>
+									<th>申请时间</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>某先生</td>
+									<td>13800138000</td>
+									<td>
+										<a href="javascript:;" class="businessDesc" data-tips="店铺简介店铺简介店铺简介店铺简介店铺简介店铺简介">CHC深夜食堂</a>
+									</td>
+									<td>11~30人</td>
+									<td>
+										<a href="javascript:;" class="businessDetailAddress" data-tips="广东省阳江市江城区城东街道波陵园一街28号">阳江 <i class="fa fa-map-marker"></i></a>
+									</td>
+									<td>2018-04-25 12:21:22</td>
+									<td>
+										<div class="layui-form">
+											<select name="state">
+												<option value="1">未联系</option>
+												<option value="2">未合作</option>
+												<option value="3">已合作</option>
+												<option value="4">不合作</option>
+											</select>
+										</div>
+									</td>
+									<td>
+										<button class="layui-btn layui-btn-sm">详情</button>
+										<button class="layui-btn layui-btn-sm layui-btn-danger"><i class="fa fa-trash-o"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>某先生</td>
+									<td>13800138000</td>
+									<td>
+										<a href="javascript:;" class="businessDesc" data-tips="CHC深夜食堂CHC深夜食堂CHC深夜食堂CHC深夜食堂">CHC深夜食堂</a>
+									</td>
+									<td>11~30人</td>
+									<td> 
+										<a href="javascript:;" class="businessDetailAddress" data-tips="广东省阳江市江城区城东街道波陵园一街28号">阳江 <i class="fa fa-map-marker"></i></a>
+									</td>
+									<td>2018-04-25 12:21:22</td>
+									<td>
+										<div class="layui-form">
+											<select name="state">
+												<option value="1">未联系</option>
+												<option value="2">未合作</option>
+												<option value="3">已合作</option>
+												<option value="4">不合作</option>
+											</select>
+										</div>
+									</td>
+									<td>
+										<button class="layui-btn layui-btn-sm">详情</button>
+										<button class="layui-btn layui-btn-sm layui-btn-danger"><i class="fa fa-trash-o"></i></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="layui-tab-item">kefu</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../lib/layui/layui.js"></script>
+	<script>
+		layui.config({
+			base: '../static/js/pages/'
+		}).use(['apply'], function () {
+			var apply = layui.apply;
+			apply.init();
+		});
+	</script>
 </body>
 </html>

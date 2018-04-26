@@ -1,4 +1,17 @@
-.liguo-wrapper {
+.temp-wrapper {
     background-color: white;
-    padding: 12px;
+    padding: 20px;
+}
+
+.temp-thumbnail {
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .05);
+	padding: 15px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.temp-opera {
+	padding: 15px 0px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
 }
