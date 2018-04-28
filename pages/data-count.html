@@ -1,65 +1,44 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../lib/layui/css/layui.css">
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/styles/pages.css?2">
 </head>
+
 <body>
     <div class="temp-wrapper">
         <div class="layui-row layui-col-space12">
-            <div class="layui-col-md6">
+            <div class="layui-col-md3">
                 <div class="temp-thumbnail">
-                    <table class="layui-table">
-                        <colgroup>
-                            <col width="100">
-                            <col>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>版本</td>
-                                <td>
-                                    <p>开发版：V1.0.3 <span class="layui-badge layui-bg-blue">版本号规则：大改版/新功能上线数/BUG修复数</span></p>
-                                    <!-- <p style="margin-bottom: 6px;">稳定版：V1.0.2</p> -->
-                                    <!-- <p>版本号规则：大改版/新功能上线数/BUG修复数</p> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>框架、包</td>
-                                <td>
-                                    <a href="http://www.layui.com" class="layui-btn layui-btn-sm layui-btn-primary" target="_blank">LayUI</a>
-                                    <a href="https://fontawesome.com/?from=io" class="layui-btn layui-btn-sm layui-btn-primary" target="_blank">Font Awesome 4.x</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>开发者</td>
-                                <td>四爷 <small style="margin-left: 4px;">(母亲起的外号)</small></td>
-                            </tr>
-                            <tr>
-                                <td>开源</td>
-                                <td>
-                                    <a href="https://github.com/849989428/temp-bd" target="_blank" class="layui-btn layui-btn-sm layui-btn-primary">
-                                        <i class="fa fa-github"></i> GitHub
-                                    </a>
-                                    <!-- <a href="#" target="_blank" class="layui-btn layui-btn-sm layui-btn-primary">码云</a> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>备注</td>
-                                <td>
-                                    模板内任何内容、二维码、外链等均为虚构
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="temp-opera">
+                        <h3>当前互联网时间</h3>
+                    </div>
+                    <div id="calenda" align="center"></div>
+                </div>
+            </div>
+            <div class="layui-col-md9">
+                <div class="temp-thumbnail">
+                    <div id="shareMemberChart" style="width: 100%;height: 392px;"></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../lib/echarts/echarts.common.min.js"></script>
+    <script>
+        layui.config({
+            base: '../static/js/pages/'
+        }).use(['count'], function () {
+            var count = layui.count;
+            count.shareMemberCount('shareMemberChart');
+        });
+    </script>
 </body>
+
 </html>
