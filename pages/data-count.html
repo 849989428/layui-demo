@@ -35,9 +35,43 @@
                         <div class="layui-inline">
                             <input type="text" placeholder="查询时间范围" class="layui-input" id="laydateInput1" style="width: 300px;">
                         </div>
-                        <button class="layui-btn"><i class="fa fa-search"></i></button>
+                        <button class="layui-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
                     <div id="cydBaseChart" style="width: 100%;height: 400px;"></div>
+                </div>
+            </div>
+            <div class="layui-col-md6">
+                <div class="temp-thumbnail">
+                    <div class="temp-opera">
+                        <div class="layui-inline">
+                            <input type="text" placeholder="查询时间范围" class="layui-input" id="laydateInput2" style="width: 300px;">
+                        </div>
+                        <button class="layui-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div id="turnoverCharts" style="width:100%;height:400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space12">
+            <div class="layui-col-md12">
+                <div class="temp-thumbnail">
+                    <div class="temp-opera">
+                        <div class="layui-inline layui-form">
+                            <select name="city">
+                                <option value="">选择切换城市</option>
+                                <option value="1">1~5人</option>
+                                <option value="2">6~10人</option>
+                                <option value="3">11~30人</option>
+                                <option value="4">30人以上</option>
+                            </select>
+                        </div>
+                        <button class="layui-btn selectCityParamsExplain">参数说明</button>
+                    </div>
+                    <div id="myAgentCityCharts" style="width:100%;height:400px"></div>
                 </div>
             </div>
         </div>
@@ -51,6 +85,8 @@
             var count = layui.count;
             count.shareMemberCount('shareMemberChart');
             count.cydNewBaseCount('cydBaseChart');
+            count.turnoverCount('turnoverCharts');
+            count.agentCityCount('myAgentCityCharts');
         });
     </script>
 </body>
