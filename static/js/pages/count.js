@@ -67,7 +67,7 @@ layui.define([
                         data: SMCD
                     },
                     series: [{
-                        name: '共享会员',
+                        name: '数量',
                         type: 'bar',
                         data: SMND
                     }]

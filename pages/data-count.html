@@ -15,17 +15,25 @@
     <div class="temp-wrapper">
 
         <div class="layui-row layui-col-space12">
-            <div class="layui-col-md3">
+            <div class="layui-col-md4">
                 <div class="temp-thumbnail">
                     <div class="temp-opera">
-                        <h3>当前互联网日期</h3>
+                        <div class="layui-inline">
+                            <input type="text" placeholder="查询时间范围" class="layui-input" id="laydateInput1" style="width: 320px;">
+                        </div>
+                        <button class="layui-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
-                    <div id="calenda" align="center"></div>
+                    <div align="center">
+                        <span>单日查询</span>
+                        <div id="calenda" align="center" style="margin-top: 12px;"></div>
+                    </div>
                 </div>
             </div>
-            <div class="layui-col-md9">
+            <div class="layui-col-md8">
                 <div class="temp-thumbnail">
-                    <div id="shareMemberChart" style="width: 100%;height: 392px;"></div>
+                    <div id="shareMemberChart" style="width: 100%;height: 440px;"></div>
                 </div>
             </div>
         </div>
@@ -33,27 +41,27 @@
         <div class="layui-row layui-col-space12">
             <div class="layui-col-md6">
                 <div class="temp-thumbnail">
-                    <div class="temp-opera">
+                    <!-- <div class="temp-opera">
                         <div class="layui-inline">
                             <input type="text" placeholder="查询时间范围" class="layui-input" id="laydateInput1" style="width: 300px;">
                         </div>
                         <button class="layui-btn">
                             <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                    </div> -->
                     <div id="cydBaseChart" style="width: 100%;height: 400px;"></div>
                 </div>
             </div>
             <div class="layui-col-md6">
                 <div class="temp-thumbnail">
-                    <div class="temp-opera">
+                    <!-- <div class="temp-opera">
                         <div class="layui-inline">
                             <input type="text" placeholder="查询时间范围" class="layui-input" id="laydateInput2" style="width: 300px;">
                         </div>
                         <button class="layui-btn">
                             <i class="fa fa-search"></i>
                         </button>
-                    </div>
+                    </div> -->
                     <div id="turnoverCharts" style="width:100%;height:400px"></div>
                 </div>
             </div>

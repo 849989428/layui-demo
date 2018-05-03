@@ -5,19 +5,19 @@ layui.define([
         ,layer = layui.layer;
 
     // 基础提示
-    layer.open({
-        type: 1,
-        title: false,
-        closeBtn: false,
-        area: '380px',
-        shade: 0.5,
-        id: 'TEMP_come_in_prompt',
-        resize: false,
-        btn: ['我知道了'],
-        btnAlign: 'c',
-        moveType: 1,
-        content: '<div style="padding: 30px;line-height: 22px;background-color: #393D49; color: #fff;">亲，欢迎您进入BD后台！我是人工系统：小易。<br /><br />下面，将给您介绍一则注意事项：<br /><br />不要轻易使用浏览器重载功能刷新页面，尤其是在打开了两个及以上标签页面，因为这会让你打开的标签页面全部关闭掉而我也会再次出现哦，想要重新加载页面可使用头部导航左侧的刷新按钮。<br /><br />在后台使用过程中如果发现有什么问题请及时反馈给开发人员，以免影响您的体验。</div>'
-    });
+    // layer.open({
+    //     type: 1,
+    //     title: false,
+    //     closeBtn: false,
+    //     area: '380px',
+    //     shade: 0.5,
+    //     id: 'TEMP_come_in_prompt',
+    //     resize: false,
+    //     btn: ['我知道了'],
+    //     btnAlign: 'c',
+    //     moveType: 1,
+    //     content: '<div style="padding: 30px;line-height: 22px;background-color: #393D49; color: #fff;">亲，欢迎您进入BD后台！我是人工系统：小易。<br /><br />下面，将给您介绍一则注意事项：<br /><br />不要轻易使用浏览器重载功能刷新页面，尤其是在打开了两个及以上标签页面，因为这会让你打开的标签页面全部关闭掉而我也会再次出现哦，想要重新加载页面可使用头部导航左侧的刷新按钮。<br /><br />在后台使用过程中如果发现有什么问题请及时反馈给开发人员，以免影响您的体验。</div>'
+    // });
 
     var funs = {
         init: function () {

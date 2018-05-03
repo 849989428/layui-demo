@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../lib/layui/css/layui.css">
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../static/styles/pages.css?2">
+    <link rel="stylesheet" href="../static/styles/pages.css?22">
 </head>
 <body>
 	<div class="temp-wrapper">
@@ -129,7 +129,30 @@
 						</table>
 					</div>
 				</div>
-				<div class="layui-tab-item">kefu</div>
+				<div class="layui-tab-item">
+					<div class="temp-opera">
+						<div class="layui-form">
+							<div class="layui-inline">
+								<input type="text" class="layui-input" placeholder="客服昵称" required lay-verify="required">
+							</div>
+							<div class="layui-inline">
+								<input type="text" class="layui-input" placeholder="客服联系方式" required lay-verify="required">
+							</div>
+							<button class="layui-btn">添加客服</button>
+						</div>
+					</div>
+					<ul class="list temp-apply-customer-service">
+						<li>
+							<div class="name">
+								某某某
+								<a href="javascript:;" class="del">
+									<i class="fa fa-remove"></i>
+								</a>
+							</div>
+							<div class="content">13800138000</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -137,7 +160,8 @@
 	<script src="../lib/layui/layui.js"></script>
 	<script>
 		layui.config({
-			base: '../static/js/pages/'
+			base: '../static/js/pages/',
+			version: true
 		}).use(['apply'], function () {
 			var apply = layui.apply;
 			apply.init();

@@ -16,6 +16,14 @@ layui.define([
 	});
 
 
+	$('.temp-apply-customer-service').on('click', '.del', function () {
+		var _this = $(this), txt = _this.parent().text();
+		layer.confirm('将从数据库中移除该数据', function () {
+			_this.parent().parent().remove();
+			layer.msg('已移除客服' + txt);
+		});
+	});
+
 	var funs = {
 		init: function () {
 			// funs.businessDesc();
